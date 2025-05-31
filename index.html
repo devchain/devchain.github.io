@@ -1,1 +1,166 @@
-<h1>hey!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InvestAI - Smart Investment Chatbot</title>
+  <style>
+    :root {
+      --light-mint: #BFD6CE;
+      --soft-teal: #96B3A9;
+      --muted-sage: #768F88;
+      --slate-green: #546B67;
+      --dark-green: #334349;
+      --charcoal: #1F2A2E;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, var(--light-mint), var(--charcoal));
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: var(--dark-green);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--light-mint);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0f0ec;
+      margin-top: 0.5rem;
+    }
+
+    .use-cases {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1.5rem;
+      background-color: var(--slate-green);
+    }
+
+    .use-case {
+      background-color: var(--charcoal);
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .use-case h3 {
+      color: var(--light-mint);
+      margin-bottom: 0.5rem;
+    }
+
+    .use-case p {
+      font-size: 0.95rem;
+      color: #d2e3de;
+    }
+
+    .chat-demo {
+      background-color: var(--muted-sage);
+      padding: 3rem 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .chat-demo h2 {
+      color: var(--charcoal);
+      margin-bottom: 1.5rem;
+    }
+
+    .chat-box {
+      background-color: white;
+      color: var(--charcoal);
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .message {
+      margin-bottom: 1rem;
+    }
+
+    .message.user {
+      text-align: right;
+    }
+
+    .message.bot {
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--dark-green);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--soft-teal);
+    }
+
+    @media (max-width: 768px) {
+      .use-cases {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>InvestAI</h1>
+    <p>Your Smart Chatbot Companion for Smarter Investments</p>
+  </header>
+
+  <section class="use-cases">
+    <div class="use-case">
+      <h3>Portfolio Summary</h3>
+      <p>Ask the chatbot for a real-time summary of your holdings and asset classes.</p>
+    </div>
+    <div class="use-case">
+      <h3>Transaction Search</h3>
+      <p>Find historical transactions by date, amount, or asset type instantly.</p>
+    </div>
+    <div class="use-case">
+      <h3>Performance Insights</h3>
+      <p>Get a quick breakdown of what's performing well and what’s not.</p>
+    </div>
+    <div class="use-case">
+      <h3>Generate Charts</h3>
+      <p>Request visual charts like bar, pie, or line based on your financial data.</p>
+    </div>
+  </section>
+
+  <section class="chat-demo">
+    <h2>Try a Quick Chat</h2>
+    <div class="chat-box">
+      <div class="message user">"Show me my holdings summary."</div>
+      <div class="message bot">"Your portfolio consists of 50% equities, 30% debt, and 20% alternatives."</div>
+      <div class="message user">"Break down my equity investments."</div>
+      <div class="message bot">"Equities include 40% US Stocks, 35% India Bluechips, and 25% Tech ETFs."</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 InvestAI. All rights reserved.
+  </footer>
+</body>
+</html>
